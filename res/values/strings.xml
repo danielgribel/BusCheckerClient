@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BusChecker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_list">Checkins</string>
+    
+	<string name="checkin_button">Checkin</string>
+	<string name="list_button">Mostrar ônibus perto de mim!</string>
+	<string name="get_location_button">Obter minha localização</string>
+	<string name="direction_label">Sentido</string>
+	<string name="bus_label">Linha de ônibus</string>
+	<string name="checkin_title">Checkin</string>
+	<string name="search">Buscar</string>
+	<string name="header_content">Header</string>
+	
+</resources>
