@@ -18,6 +18,7 @@ import org.json.JSONArray;
 
 import com.example.buschecker.R;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -121,6 +122,22 @@ public class ListActivity extends BusLoaderActivity {
 			Log.e("LogGetJsonDataCheckins", "Error at getJsonDataCheckins: " + e.toString());
 		}
 		return list;
+	}
+	
+	public void homeOnClick(View view) {
+		goToHome();
+		//startActivity(new Intent(this, MainActivity.class));
+	}
+
+	@Override
+	public void onBackPressed() {
+		goToHome();
+	}
+	
+	private void goToHome() {
+		Intent intent = new Intent(this, MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
 	}
 	
 }

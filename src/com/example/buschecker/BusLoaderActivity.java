@@ -16,10 +16,8 @@ import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -104,10 +102,6 @@ public class BusLoaderActivity extends Activity {
 		dataList.setAdapter(adapter);
 	}
 	
-	public void homeOnClick(View view) {
-		startActivity(new Intent(this, MainActivity.class));
-	}
-
 	public Map<String, List<String>> getBusDirection() {
 		return busDirection;
 	}
